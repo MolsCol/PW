@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web de MolsCol</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img src="ing/MolsCol.img.png" alt="" />
+      
+      </div>
+      <h1>MolsCol</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio" class="inicio2">Inicio</a></li>
+          <li><a href="#sobre-mi2" class="sobre-mi">Sobre mi</a></li>
+          <li><a href="#formulario2" class="contactos">Contactos</a></li>
+          <li><a href="#proyecto2" class="proyecto">Proyectos</a></li>
+          <li><a href="#mapa2" class="mapa">Mapa</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="inicio2" id="inicio">
+      <div class="container">
+        <h2>Bienvenidos a mi pagina</h2>
+        <p>Esta es una breve descripcion sobre mi
+          <br>En esta pagina podras encontrar informacion sobre mi y mis proyectos.
+          <br>Espero que disfrutes de tu visita y encuentres lo que buscas.
+          <br>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo.
+          <br>Gracias por visitar mi pagina web.
+        </p>
+      </div>
+    </section>
+    <section id="sobre-mi2">
+      <div class="container">
+        <h2>Sobre mi</h2>
+        <p>
+          Mi nombre es Omar  Santiago Molina Londoño y soy un estudiante del Cendi, actualmente estudiando programacion
+          y desarrollo web. Me gusta aprender cosas nuevas y mejorar mis habilidades en el campo de la tecnologia.
+          
+        </p>
+        <p>
+            En mi tiempo libre disfruto de la lectura, la musica y el deporte. Me gusta aprender sobre nuevas tecnologias y tendencias en el desarrollo web.
+            estoy siempre buscando nuevas oportunidades para mejorar mis habilidades y crecer como profesional.
+            <br>Me considero una persona creativa, organizada y con una gran capacidad de trabajo en equipo. Me gusta enfrentar nuevos retos y aprender de ellos.
+            <br>Si deseas saber mas sobre mi, no dudes en ponerte en contacto conmigo a traves del formulario de contacto que se encuentra mas abajo.
+            <br>Estoy siempre dispuesto a ayudar y colaborar en proyectos interesantes.
+            
+        </p>
+      </div>
+    </section>
+    <section id="formulario2">
+      <div class="formulario">
+        <h2>Formulario de contacto</h2>
+        <form action="#" method="post">
+          <div class="campo">
+          <input type="text" name="Nombre" id="name" placeholder="Nombre">
+          </div>
+          <div class="campo">
+          <input type="email" name="Correo" id="correo" placeholder="Correo">
+          </div>
+          <div class="campo">
+          <textarea name="Mensaje" id="textbox" rows="5" placeholder="Mensaje"></textarea>
+          </div>
+          <div class="campo">
+          <input type="submit" value="Enviar">
+         </div>
+        </form>
+      </div>
+    </section>
+    <section id="proyecto2" class="proyecto">
+      <h2>Proyectos</h2>
+      <p>Estos son algunos de mis proyectos realizados en el Cendi</p>
+      <div class="logo2">
+        <img src="ing/Screenshot 2025-05-06 160939.png" alt="">
+      </div>
+    </section>
+    <section id="mapa2" class="mapa">
+    <h2>Mapa</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.13250896476!2d-75.56509992647646!3d6.2462633263259795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442858283e4af9%3A0xe323531db7977b0a!2s%22CENDI%22%20Corporaci%C3%B3n%20Centro%20de%20Desarrollo%20Integrado%20Instituci%C3%B3n%20de%20Educaci%C3%B3n!5e0!3m2!1ses-419!2sco!4v1746221747533!5m2!1ses-419!2sco" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+   <section class="pdp">
+    <a href="#header" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+    <footer>
+      <p>Derechos de autor &copy; 2025 - MolsCol</p>
+    </footer>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+ 
+$('a.scroll-to-top').click(function(event){
+  event.preventDefault();
+$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 800);
+});
+$('a.inicio2').click(function(event){
+  event.preventDefault();
+$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 800);
+});
+$('a.sobre-mi').click(function(event){
+  event.preventDefault();
+$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 800);
+});
+$('a.contactos').click(function(event){
+  event.preventDefault();
+$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 800);
+});
+$('a.proyecto').click(function(event){
+  event.preventDefault();
+$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 800);
+});
+$('a.mapa').click(function(event){
+  event.preventDefault();
+$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 800);
+});
+    });
+  </script>
+  
+  </body>
+</html>
